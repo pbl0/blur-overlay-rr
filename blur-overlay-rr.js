@@ -6,6 +6,7 @@
 // @author       Pablo
 // @match        https://rivalregions.com/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/pbl0/blur-overlay-rr/master/blur-overlay-rr.js
 // ==/UserScript==
 
 const BLUR = "10";
