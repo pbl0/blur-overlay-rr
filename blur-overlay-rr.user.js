@@ -1,20 +1,17 @@
 // ==UserScript==
-// @name         BlurOverlayRR
-// @namespace    https://github.com/pbl0
-// @version      0.1
-// @description  Small userscript that adds blur effect to RivalRegions game overlay in PC version
-// @author       Pablo
-// @match        https://rivalregions.com/*
-// @grant        none
-// @updateURL    https://raw.githubusercontent.com/pbl0/blur-overlay-rr/master/blur-overlay-rr.js
+// @name        BlurOverlayRR
+// @namespace   https://pablobls.tech/
+// @match       *://rivalregions.com/
+// @author      Pablo
+// @description Small userscript that adds blur effect to RivalRegions game overlay in PC version
+// @downloadURL https://raw.githubusercontent.com/pbl0/blur-overlay-rr/master/blur-overlay-rr.user.js
 // ==/UserScript==
 
 const BLUR = "10";
 
 (function() {
     'use strict';
-
-
+    $(document).ready(()=> {
     // select the target node
     var target = document.querySelector('#header_slide');
 
@@ -48,6 +45,9 @@ const BLUR = "10";
 
     // pass in the target node, as well as the observer options
     observer.observe(target, config);
+    })
+
+    
 
 
 })();
